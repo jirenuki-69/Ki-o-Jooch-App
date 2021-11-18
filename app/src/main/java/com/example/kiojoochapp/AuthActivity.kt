@@ -21,12 +21,6 @@ class AuthActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var authStateListener: FirebaseAuth.AuthStateListener
 
-    private val resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-        if (it.resultCode == RESULT_CANCELED) {
-            finish()
-        }
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
@@ -41,10 +35,10 @@ class AuthActivity : AppCompatActivity() {
         authStateListener = FirebaseAuth.AuthStateListener { auth ->
             if (auth.currentUser != null) {
                 val intent = Intent(this, HomeActivity::class.java)
-                resultLauncher.launch(intent)
+                startActivityForResult(intent, LoginActivity.AUTH_REQUEST_CODE)
             } else {
                 val intent = Intent(this, LoginActivity::class.java)
-                resultLauncher.launch(intent)
+                startActivityForResult(intent, LoginActivity.AUTH_REQUEST_CODE)
             }
         }
     }
@@ -57,5 +51,13 @@ class AuthActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         firebaseAuth.removeAuthStateListener(authStateListener)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (resultCode == RESULT_CANCELED) {
+            finish()
+        }
     }
 }

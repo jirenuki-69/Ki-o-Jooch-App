@@ -1,5 +1,6 @@
 package com.example.kiojoochapp.Activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -26,18 +27,30 @@ class HomeActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        firebaseAuth = FirebaseAuth.getInstance()
+
         loadUser()
+        listeners()
     }
 
     private fun loadUser() {
-        firebaseAuth = FirebaseAuth.getInstance()
-        database = Firebase.database.reference
-        database
-            .child("users")
-            .child(firebaseAuth.currentUser!!.uid).get()
-            .addOnSuccessListener { snapshot ->
-                val user = snapshot.value as User
-                binding.tvUsername.text = user.name
+
+        Log.d(AuthActivity.AUTH_DEBUG_TEXT, "${firebaseAuth.currentUser?.displayName}")
+        binding.tvUsername.text = firebaseAuth.currentUser?.email
+    }
+
+    private fun listeners() {
+        binding.btnSignOut.setOnClickListener {
+            firebaseAuth.signOut()
+
+            if (isTaskRoot) {
+                val intent = Intent(this, LoginActivity::class.java)
+
+                startActivity(intent)
+                finish()
+            } else {
+                finish()
             }
+        }
     }
 }

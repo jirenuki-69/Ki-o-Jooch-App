@@ -36,6 +36,10 @@ class SignUpActivity : AppCompatActivity() {
         database = Firebase.database.reference
 
         supportActionBar?.hide()
+        this.window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
 
         firebaseAuth = FirebaseAuth.getInstance()
 

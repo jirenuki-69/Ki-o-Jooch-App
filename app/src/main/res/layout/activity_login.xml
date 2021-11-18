@@ -7,7 +7,7 @@
     android:paddingHorizontal="25dp"
     android:paddingTop="50dp"
     android:paddingBottom="30dp"
-    tools:context=".MainActivity">
+    tools:context=".Activities.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,21 +40,21 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/username_edit_text"
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="20dp"
-                android:autofillHints="username"
+                android:autofillHints="emailAddress"
                 android:background="@color/gray"
                 android:fontFamily="@font/arial_rounded_mt_bold"
-                android:hint="Nombre de usuario"
-                android:inputType="text"
-                android:paddingStart="20dp"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="20dp"
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/password_edit_text"
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginHorizontal="30dp"
@@ -64,7 +64,7 @@
                 android:fontFamily="@font/arial_rounded_mt_bold"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
-                android:paddingStart="20dp"
+                android:paddingHorizontal="20dp"
                 android:textColor="@color/black" />
         </LinearLayout>
 
@@ -75,7 +75,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/login_button"
+                android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginHorizontal="15dp"
@@ -88,7 +88,7 @@
                 android:textStyle="bold" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/sign_up_button"
+                android:id="@+id/btnSignUp"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
                 android:src="@drawable/google_logo" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/google_button"
+                android:id="@+id/btnGoogle"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

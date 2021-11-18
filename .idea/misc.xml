@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.31471861471861473" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.31471861471861473" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable/splash_screen.xml" value="0.1175925925925926" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_home.xml" value="0.30526315789473685" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_login.xml" value="0.30526315789473685" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
       </map>

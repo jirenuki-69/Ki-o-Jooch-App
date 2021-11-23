@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KioJoochApp">
         <activity
+            android:name=".Activities.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AccountActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.HomeActivity"
             android:exported="false" />
         <activity

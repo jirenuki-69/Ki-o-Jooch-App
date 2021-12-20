@@ -10,8 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KioJoochApp">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".Activities.ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CatalogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

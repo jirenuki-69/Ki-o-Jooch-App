@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#F2F2F2</color>
+    <color name="gray_desc">#AAAAAA</color>
+    <color name="primary_red">#B12441</color>
+    <color name="secondary_red">#FF5454</color>
+    <color name="red_pepper">#FF5454</color>
+    <color name="green">#6BE573</color>
+    <color name="dollar_green">#7ABC82</color>
+    <color name="paypal_blue">#0095D6</color>
 </resources>

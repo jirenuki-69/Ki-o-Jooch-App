@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="3"
+        android:fontFamily="@font/arial_rounded_mt_bold"
+        android:text="Encurtido de Pepinos"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/arial_rounded_mt_bold"
+        android:text="35.00 MXN"
+        android:textAlignment="textEnd"
+        android:textColor="@color/primary_red"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,18 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".Activities.CartActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/cartHeader"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fontFamily="@font/arial_rounded_mt_bold"
-        android:gravity="center"
-        android:text="In Development!!!"
-        android:textColor="@color/primary_red"
-        android:textSize="30sp" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/btnCartBack"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:contentDescription="back button"
+            android:src="@drawable/back_button_icon" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <ImageView
+            android:id="@+id/btnCartAccount"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/user" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginVertical="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:divider="@null"
+        app:layout_constraintBottom_toTopOf="@id/btnProceedPayment"
+        app:layout_constraintTop_toBottomOf="@id/cartHeader"
+        tools:layout_editor_absoluteX="24dp"
+        tools:listitem="@layout/cart_item_layout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnProceedPayment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/secondary_red"
+        android:fontFamily="@font/arial_rounded_mt_bold"
+        android:text="Proceder al Pago"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</LinearLayout>

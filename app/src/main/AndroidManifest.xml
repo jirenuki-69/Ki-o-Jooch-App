@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KioJoochApp">
         <activity
+            android:name=".Activities.ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CatalogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.CartActivity"
             android:exported="false" />
         <activity

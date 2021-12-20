@@ -4,15 +4,24 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.31471861471861473" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable/box_shadow.xml" value="0.318859649122807" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.31471861471861473" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable/payment_product_item.xml" value="0.318859649122807" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable/search_icon.xml" value="0.318859649122807" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable/search_icon_drawable.xml" value="0.24210526315789474" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/drawable/splash_screen.xml" value="0.1175925925925926" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_account.xml" value="0.30526315789473685" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_cart.xml" value="0.30526315789473685" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_catalog.xml" value="0.30526315789473685" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_home.xml" value="0.30526315789473685" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_login.xml" value="0.30526315789473685" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_payment.xml" value="0.30526315789473685" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_product_details.xml" value="0.30526315789473685" />
         <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/box_shadow.xml" value="0.30526315789473685" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/cart_item_layout.xml" value="0.30526315789473685" />
+        <entry key="..\:/archivos/KioJoochApp/app/src/main/res/layout/payment_product_item.xml" value="0.30526315789473685" />
       </map>
     </option>
   </component>

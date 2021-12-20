@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.inputmethod.EditorInfo
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import com.example.kiojoochapp.AuthActivity
@@ -76,6 +77,24 @@ class HomeActivity : AppCompatActivity() {
             // TODO: Go to Shopping Cart Activity
             val intent = Intent(this as Context, CartActivity::class.java)
             resultLauncher.launch(intent)
+        }
+
+        binding.btnChiles.setOnClickListener {
+            val intent = Intent(this as Context, CatalogActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        binding.btnEncurtidos.setOnClickListener {
+            val intent = Intent(this as Context, CatalogActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        binding.producto.setOnClickListener {
+            val intent = Intent(this as Context, ProductDetailsActivity::class.java)
+
+            startActivity(intent)
         }
     }
 }
